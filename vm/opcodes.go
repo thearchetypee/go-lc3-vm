@@ -37,7 +37,7 @@ var OPCODES = map[uint16]func(uint16){
 	OP_JMP:  opJMP,
 	OP_RES:  opRES,
 	OP_LEA:  opLEA,
-	OP_TRAP: opTRAP,
+	OP_TRAP: callTrap,
 }
 
 // getR0 extracts the value of register R0 from the given instruction.
@@ -242,10 +242,6 @@ func opLEA(instruction uint16) {
 	var pcOffset = signExtend(instruction&0x1ff, 9)
 	Register[r0] = Register[R_PC] + pcOffset
 	updateFlags(r0)
-}
-
-func opTRAP(instruction uint16) {
-	// Extract the trap vector from the instruction
 }
 
 // callOpcode calls the function associated with the given opcode and passes the instruction as an argument.
