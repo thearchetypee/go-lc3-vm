@@ -26,5 +26,10 @@ func (mem *vmMemory) Read(address uint16) uint16 {
 	return mem[address]
 }
 
+// Write the given value to the specified memory address.
+func (mem *vmMemory) Write(address, value uint16) {
+	mem[address] = value
+}
+
 // memory represents the virtual machine's memory.
 var memory vmMemory
