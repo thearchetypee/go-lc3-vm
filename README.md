@@ -22,6 +22,6 @@ go-lc3-vm path/to/program.obj
   
 
 ## Demo
-https://github.com/thearchetypee/go-lc3-vm/assets/46865638/b9b4d560-886a-46be-86ce-a4f7d85f828f
 
+https://github.com/thearchetypee/go-lc3-vm/assets/46865638/3dfafbbe-5ad6-4582-a68c-92c67e3ac97a
 
