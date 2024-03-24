@@ -15,6 +15,9 @@ Run a compiled program:
 go-lc3-vm path/to/program.obj
 ```
 
+> **Note:** Before running the installation command, make sure that the `GOBIN` environment variable is set and added to your system's `PATH`. If you're not sure how to set `GOBIN` to your path, you can refer to the [official Go documentation](https://golang.org/doc/gopath_code.html#GOPATH) for instructions.
+
+
 ## Useful Resources
 
 * [LC-3 Online Simulator](https://wchargin.github.io/lc3web/)
